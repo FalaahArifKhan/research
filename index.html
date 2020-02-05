@@ -58,7 +58,7 @@
 			<div class="text-center">
 				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
 				<h1>Falaah Arif Khan</h1>
-				<span class="position">Machine Learnist</span>
+				<span class="position">Machine Learnist, AI Anthropologist</span>
 			</div>
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
 				<div id="navbar" class="collapse">
@@ -91,8 +91,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<div class="about-desc">
 										<span class="heading-meta">About</span>
 										<h2 class="colorlib-heading">Who Am I?</h2>
-										<p><strong>Hi I'm Falaah ArifKhan</strong> I'm a Research Engineer at Dell EMC, Bangalore. I design, build and maintain data-driven models for Identity and Access Management (IAM). My current work focuses on profiling human behavior vs malicious scripts/bot behavior on web platforms. </p>
-										<p>My experience in the industry has shown me first hand the pressing challenges with building 'production-ready' models that are robust, dependable, unbaised and designed to thrive in the wild. This has informed my interest to explore the theoretical foundations of generalization and robustness and to translate these insights into provable guarantees. I’m also interested in critically assessing how AI impacts, and is in turn impacted by, the underlying social setting in which it was formulated. </p>
+										<p><strong>Hi I'm Falaah ArifKhan</strong> I'm a Research Engineer at Dell EMC, Bangalore. I design, build and maintain data-driven models for Identity and Access Management (IAM). Consumer-facing work I’ve done includes the detection of malicious behavior by profiling genuine login activity and using it to identify anomalous (attack) vectors. I also formulate suitable responses to malicious requests, in the form of Reverse Turing Tests, Multi Factor Authentication mechanisms and the strategic placement of Honeypots. Developer-facing products I’ve designed include Activity Forecasters for teams to baseline their product traffic and easily identify attacks (requests exceed the baseline) and deteriorating product health (requests drop below the baseline) and a Dynamic Threat Modeler that uses Graph Filters to automatically update threat models as the product evolves.</p>
+										<p>I love working in the Security space and Machine Learning is a natural fit for this domain. Security is a fundamentally asymmetric domain; To break a system, we need only find one weakness. To secure a system, we must identify (which itself is practically impossible) and then safeguard every possible vulnerability. Furthermore, when designing bastions of security, we are tasked to account for attack capabilities that we have seen in the past and continue to see in the present, but also for future capabilities. Machine learning presents itself as a desirable ally because it effectively detects patterns that otherwise require decades of human expertise to discern.</p>
+										<p>My work in the industry has shown me firsthand the pressing challenges of building 'production-ready' models. When the prediction from a model could determine whether we authorize an 8-figure transaction, it ceases to matter what new acronym we’re giving the underlying algorithm (AI or ML or DL or AGI or !!!!!) Security is a specially challenging environment to deploy Machine Learning in because the ground truth is not always obvious. This is unlike other domains, where say you’re looking at the picture of a dog and the model detects it as a cat, you immediately know that the model went wrong in its classification. In the middle of a Flash Sale, when all your static alerts have gone off and bad actors have potentially penetrated your system, you need to be able to rely upon model results. And if you’re not a domain expert, you might choose to blindly trust in the model’s predictions. One simple oversight and you would have incorrectly declined millions of dollars’ worth of transactions and will forever go down in history as the developer who cried wolf.</p>
+										<p> Contrary to the media narrative around AI, we are yet to have figured out how to build models that are robust, dependable, unbiased and designed to thrive in the wild. These challenges have informed my interest to explore the theoretical foundations of generalization and robustness and to translate these insights into algorithms with provable guarantees.  I’m also interested in critically assessing how AI impacts, and is in turn impacted by, the underlying social setting in which it was formulated. Towards this end, I dapple in “AI Anthropology”, which follows the simple philosophy of: The best way to understand models is to observe their behavior in the wild.x`</p>
 									</div>
 								</div>
 							</div>						
@@ -116,7 +118,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<div class="panel panel-default">
 									    <div class="panel-heading" role="tab" id="headingOne">
 									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Behavior-based Authentication
+									        	<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Behavior-based Authentication
 									            </a>
 									        </h4>
 									    </div>
@@ -124,7 +126,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									         <div class="panel-body">
 									            <div class="row">
 										      		<div class="col-md-6">
-										      			<p>. </p>
+										      			<p>The fundamental research problem was to investigate the efficacy of a novel “who I am/how I behave” authentication paradigm. Conventional authentication works on a “what I know” (username/password) or “what I have” (device) model. Our system would study the user’s behavior while typing his/her username and use the activity profile as the key against which access was granted. This eliminated the need for the user to remember a password or have access to a registered device. Conversely, even if a password is cracked or a device is stolen, the bad actor would not be able to penetrate the system because his behavior would intrinsically differ from that of the genuine user.</p>
+										      			<p> We created a custom dataset of keystroke vectors, mouse coordinates and click times. A subset of the data can be found <a href="documents/BehavioralBiometricsOneUserModel.csv"> here </a> This dataset is for a one-user model, ie. Differentiating the (human) user of interest from a large set of other users. </p>
+										      			<p> Paper: <a href="https://link.springer.com/chapter/10.1007/978-981-13-5826-5_52"> Arif Khan F., Kunhambu S., G K.C. (2019) Behavioral Biometrics and Machine Learning to Secure Website Logins </a> </p>
+										      			<p> US Patent: Behavioral Biometrics and Machine Learning to secure website Logins, Dell Technologies. Inventors: Falaah Arif Khan, Sajin Kunhambu, K Chakravarthy G. Filed: January 25, 2019 (US 16/257650) </p>
+
 										      		</div>
 										      		<div class="col-md-6">
 										      			<p>.</p>
@@ -184,7 +190,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Work</span>
+							<span class="heading-meta">Products, Prototypes and Projects</span>
 							<h2 class="colorlib-heading animate-box">Recent Work</h2>
 						</div>
 					</div>
